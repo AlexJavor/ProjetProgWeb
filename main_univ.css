@@ -78,10 +78,15 @@ header p {
 	font-weight: 600;
 }
 
-#photo_cursos{ /*NO TOQUEU, ÉS PER A L'AJUSTAMENT GENERAL DE LES FOTOS */
+#photo_cursos{ /*PAS TOUCHE SVP */
 	max-width: 100%;
 	height: auto;
 	border-radius: 10px;
+}
+
+#INSA_photo{ /*PAS TOUCHE SVP */
+	width: 70%;
+	height: auto;
 }
 
 /*FOOTER*/
