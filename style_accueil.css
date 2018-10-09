@@ -1,0 +1,75 @@
+/*MAIN BODY*/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/*HEADER*/
+header {
+	padding: 20px 0;
+  }
+
+header h1 {
+	font-weight: 700;
+	margin: 0;
+}
+
+header .row, footer .row {
+	display: flex;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header p {
+	padding: 20px 5px;
+	margin: 0;
+  }
+
+.btn.btn-primary {
+	border-radius: 5px;
+	border: 0px;
+	color: red;
+	text-shadow: none;
+	background-color: white;
+}
+
+.btn.btn-primary:hover {
+	color: white;
+	background-color: lightgray;
+  }
+
+/*Bienvenue*/
+.welcome {
+    display: flex;
+	/*background-image: url("https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_960_720.jpg");*/
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/15/21/06/reception-2507752_960_720.jpg");
+	background-size: cover;
+	color: #0000;
+	height: 600px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+	/*background-position: 0 35%;*/
+}
+
+/*Universités*/
+.INSA {
+    display: flex;
+    background-image: url("https://www.google.fr/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwiKzsnA7fjdAhVI4YUKHWyBAecQjRx6BAgBEAU&url=https%3A%2F%2Fmobile.facebook.com%2FINSAToulouse%2F%3F_ft_%3Dtop_level_post_id.1525382857522163%253Atl_objid.1525382857522163%253Athid.279342382126223%253A306061129499414%253A2%253A0%253A1506841199%253A3193674026415921439%26__tn__%3D%252AsH-R&psig=AOvVaw1z5ExXaY_YDoewg-TqrDdo&ust=1539157195431149");
+}
+
+/*FOOTER*/
+footer {
+	font-size: 12px;
+	padding: 20px 0;
+  }
+footer ul {
+	list-style: none;
+}
+
+footer li img {
+	width: 40px;
+	height: auto;
+  }
