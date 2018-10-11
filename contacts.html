@@ -3,27 +3,35 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> <!--IMPORT framework Bootstrap de l'inernet-->
+        <link rel="stylesheet" type="text/css" href="style_contacts.css">  
 		<title>Contacts</title>
 
 	</head>
 	<body>
-
 		<header>
-			<h1> 
-			Contacts de la Direction des Relations Internationales 
-			</h1>
-			<p> 
-				C'est ici que vous pourrez trouver les personnes qu'il vous faut contacter pour vous aider à préparer votre départ
-			</p>
-			<ul>
+			<section id = conteneur_1>
+				<section class = section_1>
+					<a class = "img"> <img src = "images/img_contact.jpg" /> </a>
+				</section>
+				<section class = section_1>
+					<h1> 
+					Contacts de la Direction des Relations Internationales 
+					</h1>
+					<p class = Descentree> 
+					C'est ici que vous pourrez trouver les personnes qu'il vous faut contacter pour vous aider à préparer votre départ
+					</p>
+				</section>
+			</section>
+			<ul id = conteneur>
 				<li>
 					<nav> 
-						<a href=#contactsDRI> Direction des Relations Internationales </a>
+						<a class="btn btn-primary"  role="button" href=#contactsDRI> Direction des Relations Internationales </a>
 					</nav>
 				</li>
 				<li>
 					<nav> 
-						<a href=#contactsMIC> Modélisation Informatique et Communication </a> 
+						<a class="btn btn-primary"  role="button" href=#contactsMIC > Modélisation Informatique et Communication </a> 
 					</nav>
 					<ul>
 						<li> Informatique et Réseaux </li>
@@ -32,7 +40,7 @@
 				</li>
 				<li>
 					<nav> 
-						<a href=#contactsIMACS> Ingénierie des Matériaux, Composants et Systèmes </a> 
+						<a class="btn btn-primary"  role="button" href=#contactsIMACS > Ingénierie des Matériaux, Composants et Systèmes </a> 
 					</nav>
 					<ul>
 						<li> Génie Physique </li>
@@ -41,7 +49,7 @@
 				</li>
 				<li>
 					<nav> 
-						<a href=#contactsIC> Ingénierie de la Construction </a>
+						<a class="btn btn-primary"  role="button" href=#contactsIC > Ingénierie de la Construction </a>
 					</nav>
 					<ul>
 						<li> Génie Civil </li>
@@ -50,7 +58,7 @@
 				</li>
 				<li>
 					<nav> 
-						<a href=#contactsGC> Ingénierie Chimique Biochimique et Environnement </a> 
+						<a class="btn btn-primary"  role="button" href=#contactsGC > Ingénierie Chimique Biochimique et Environnement </a> 
 					</nav>
 					<ul>
 						<li> Génie Biochimique </li>
@@ -60,63 +68,67 @@
 			</ul>	
 						
 		</header> 	
-
-		<div> 
-			<h2 id = contactsDRI> 
-				Direction des Relations Internationales 
-			</h2>
-			<p> 
-				Voici la liste des personnes travaillant à la DRI, n'hésitez pas à les contacter si vous avez des questions ! 
-			</p>	
-			<p> 
-				<a href="mailto:daniele.fournier@insa-toulouse.fr "> Danièle FOURNIER-PRUNARET </a>
-				<mark> Directrice des Relations Internationales </mark>
-			</p>	
-			<p> 
-				<a href="mailto:gabriel.denis@insa-toulouse.fr "> Gabriel DENIS </a>
-				<mark> Responsable administratif </mark>
-			</p>	
-			<p> 
-				<a href="mailto:marine.hatier@insa-toulouse.fr "> Marine HATIER </a>
-				<mark> Coordinatrice mobilité Double-diplômes </mark>
-			</p>	
-			<p> 
-				<a href="mailto:virginie.gary@insa-toulouse.fr "> Virginie GARY </a>
-				<mark> Etudiants sortants  </mark>
-			</p>	
-			<p> 
-				<a href="mailto:françoise.sarrailh@insa-toulouse.fr "> Françoise SARRAILH </a>
-				<mark> Etudiants Entrants </mark>
-			</p>	
-			<p> 
-				<a href="mailto:ugo.rossel@insa-toulouse.fr "> Ugo ROSSEL</a>
-				<mark> Finances et Gestion </mark>
-			</p>	
-			<p> 
-				<a href="mailto:carine.chakki@insa-toulouse.fr "> Carine CHAKKI </a>
-				<mark> FITEC et programmes spécifiques </mark>
-			</p>		
-		</div>
+		<section id="sec-dri">
+			<section class = "sec-dri-1">
+				<h2 id = contactsDRI> 
+					Direction des Relations Internationales 
+				</h2>
+				<p class = description> 
+					Voici la liste des personnes travaillant à la DRI, n'hésitez pas à les contacter si vous avez des questions ! 
+				</p>	
+					<p> 
+					<a href="mailto:daniele.fournier@insa-toulouse.fr " class=name> Danièle FOURNIER-PRUNARET </a>
+					<mark> Directrice des Relations Internationales </mark>
+				</p>	
+				<p> 
+					<a href="mailto:gabriel.denis@insa-toulouse.fr " class=name> Gabriel DENIS </a>
+					<mark> Responsable administratif </mark>
+				</p>	
+				<p> 
+					<a href="mailto:marine.hatier@insa-toulouse.fr " class=name> Marine HATIER </a>
+					<mark> Coordinatrice mobilité Double-diplômes </mark>
+				</p>	
+				<p> 
+					<a href="mailto:virginie.gary@insa-toulouse.fr " class=name> Virginie GARY </a>
+					<mark> Etudiants sortants  </mark>
+				</p>	
+				<p> 
+					<a href="mailto:françoise.sarrailh@insa-toulouse.fr " class=name> Françoise SARRAILH </a>
+					<mark> Etudiants Entrants </mark>
+				</p>	
+				<p> 
+					<a href="mailto:ugo.rossel@insa-toulouse.fr " class=name> Ugo ROSSEL</a>
+					<mark> Finances et Gestion </mark>
+				</p>	
+				<p> 
+					<a href="mailto:carine.chakki@insa-toulouse.fr " class=name> Carine CHAKKI </a>
+					<mark> FITEC et programmes spécifiques </mark>
+				</p>		
+			</section>
+		<!--	<section class = "sec-dri-2">
+				<a class = "img_section"> <img src="./images/drapeux_dri" /> </a> 
+			</section> -->
+		</section>
 		<div>
 			<h2 id = contactsMIC>
 				Modélisation Informatique et Communication 
 			</h2>
 			<div> 
-				<a href="mailto:stephane.genieys@insa-toulouse.fr "> Stephane GENIEYS </a>
+				<a href="mailto:stephane.genieys@insa-toulouse.fr " class=name> Stephane GENIEYS </a>
 				<mark> Correspondant pour les étudiants en deuxième année </mark>
 				<p> 
 					Bureau 8563 au Département du Génie Philosophique 
 				</p>
 			</div>
 			<div> 
-				<a href="mailto:bertrand.tondu@insa-toulouse.fr "> Bertrand TONDU </a>
+				<a href="mailto:bertrand.tondu@insa-toulouse.fr " class=name> Bertrand TONDU </a>
 				<mark> Correspondant pour les étudiants Informatique et Réseaux </mark>
 				<p>
 					Bureau 9856 au Département du Génie Anarcho-communiste 
 				</p>
 			</div>
 			<div>
-				<a href="mailto:jerome.monnier@insa-toulouse.fr "> Jérome MONNIER </a>
+				<a href="mailto:jerome.monnier@insa-toulouse.fr " class=name> Jérome MONNIER </a>
 				<mark> Correspondant pour les étudiants en Génie Mathématiques et Modélisation </mark>
 				<p>
 					Bureau 458 au Département du Génie Cosmologique 
@@ -128,28 +140,46 @@
 				Ingénierie des Matériaux, Composants et Systèmes 
 			</h2>
 			<div> 
-				<a href="mailto:guillaume.auriol@insa-toulouse.fr "> Guillaume AURIOL </a>
+				<a href="mailto:guillaume.auriol@insa-toulouse.fr " class=name> Guillaume AURIOL </a>
 				<mark> Correspondant pour les étudiants en deuxième année </mark>
 				<p> 
 					Bureau 87 au Département du Génie analphabétique 
 				</p>
 			</div>
 			<div> 
-				<a href="mailto:andrea.balocchi@insa-toulouse.fr "> Andrea BALOCCHI </a>
+				<a href="mailto:andrea.balocchi@insa-toulouse.fr " class=name> Andrea BALOCCHI </a>
 				<mark> Correspondant pour les étudiants Génie Physique </mark>
 				<p>
 					Bureau 986 au Département du Génie génético-démagogique  
 				</p>
 			</div>
 			<div>
-				<a href="mailto:bertrand.tondu@insa-toulouse.fr "> Bertrand TONDU </a>
+				<a href="mailto:bertrand.tondu@insa-toulouse.fr " class=name> Bertrand TONDU </a>
 				<mark> Correspondant pour les étudiants en Génie Mathématiques et Modélisation </mark>
 				<p>
 					Bureau 458 au Département du Génie Cosmologique 
 				</p>
 			</div>
 		</div>
-
+		<footer class="container">
+            <div class="row">
+                <p class="col-sm-4">&copy; Alex&AnthonyPRODUCTIONS 2018</p>
+                <ul id="col-sm-8">
+                    <li class="col-sm-1 col-sm-offset-8">
+                        <img src="http://granburysquare.com/wp-content/uploads/2014/08/Twitter_logo_blue-1024x832.png">
+                    </li>
+                    <li class="col-sm-1">
+                        <img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/flogo_rgb_hex-brc-site-250.png">
+                    </li>
+                    <li class="col-sm-1">
+                        <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/2/28/Instagram_logo.png/revision/latest?cb=20160513161748">
+                    </li>
+                    <li class="col-sm-1">
+                         <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c545.png">
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
 	</body>
 </html> 

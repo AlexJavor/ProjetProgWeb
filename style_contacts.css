@@ -1,0 +1,90 @@
+head{
+
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
+	margin : 20px;
+}
+
+img{
+	max-width: 100% ; 
+}
+
+header {
+	
+}
+
+header:hover
+
+{
+	color : normal ;
+}
+
+#conteneur_1 {
+	display: flex ;
+
+}
+
+.section_1:nth-child(2) {
+	flex : 1 ;
+}
+
+h1{
+	text-align: center;
+	font-weight: 400;
+}
+
+.Descentree, {
+	text-align: center;
+    font-style: italic; 
+}
+
+.description{
+	font-style: italic;
+}
+#conteneur {
+	list-style-type: none ; 
+	display : flex ;
+	justify-content: space-around;
+}
+
+.btn.btn-primary {
+
+	margin: 20px;
+    border-radius: 5px;
+	border: 0px;
+	color: white;
+	text-shadow: none;
+	background-color: crimson;
+}
+
+.btn.btn-primary:hover {
+
+}
+
+footer {
+
+}
+
+mark {
+	font-style: italic;
+}
+
+.name{
+	font-weight: 250; 
+	font-weight: bold;
+}
+
+#col-sm-8{
+
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+#sec-dri{
+	background: : url("images/drapeux_dri.jpg") fixed no-repeat left center; 
+	background-size: cover; 
+}
