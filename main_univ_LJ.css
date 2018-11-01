@@ -1,0 +1,287 @@
+/*-------------------------------MAIN BODY----------------------------------*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+/*--------------------------MAIN HEADER INSA------------------------------------*/
+.bg-black{
+	background: #333 !important;
+}
+
+#mainNav{
+	display: flex;
+	justify-content: flex-start;
+	padding: 0px 16px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #eee;
+	transition: background 0.4s;
+}
+#mainNav ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	width: 400px;
+	justify-content: space-around;
+}
+
+#mainNav .logo_INSA img{
+	height: 100px;
+	padding: 20px;
+	transition: height 0.4s;
+}
+
+.menu_button_header {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: red ;
+	font-weight: bold;
+	text-decoration:none; 
+}
+
+.menu_button_header:hover {
+	background-color: lightgrey;
+}
+
+/*-------------------------------HEADER UNI-------------------------------------*/
+
+.flex-container-header-uni{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 120px 20px 15px 20px;
+	padding: 15px 50px; 
+}
+
+.flex-container-header-uni > div {
+	width: auto;
+	padding: 10px;
+}
+.flex-container-header-uni img{
+	width: 170px;
+	height: auto;
+}
+
+.menu_button {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: red ;
+	background-color: white;
+	text-decoration:none; 
+}
+
+.menu_button:hover {
+	background-color: lightgray;
+  }
+
+/*-----------------------------PRESENTATION-----------------------------------*/
+.flex-contaier-presentation-uni {
+	display: flex;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Univerza_v_Ljubljani_01.jpg");
+	background-size: cover;
+	color: #ffffff;
+	height: 900px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+	padding: 10px 0;
+	background-position: 80% 25%;
+}
+#Pres_Univ h2{
+	color:red;
+	padding: 20px 80px 0px 0px;
+	font-family: 'Roboto', sans-serif;
+	text-align: right;
+}
+#Pres_Univ p{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+    text-justify: inter-word;
+	padding: 0px 80px 0px 300px;
+	margin: 0 0 100px 200px;
+}
+
+/*---------------------------------CONTAINER BODY-------------------------------*/
+
+.flex-container-body-uni{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 200px;
+	padding: 10px 10px; 
+
+}
+
+.flex-container-body-uni h2{
+	font-weight: 600;
+	text-align: left;
+	border-bottom: 3px solid #cccccc;
+}
+
+#Pres_Univ,#Orientations, #Cursus, #Carte, #Comments, #Contact{
+	padding: 100px 10px 10px 10px;
+	margin: -90px 30px 20px 30px;
+}
+#Cursus ul{
+	padding: 5px 40px 5px 40px;
+}
+#Comments ul{
+	padding: 20px 40px 5px 40px;
+}
+#Cursus h3,#Contact p,#Carte figure{
+	padding: 10px;
+}
+
+.flex-table{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.flex-contact{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#INSA_photo{ /*PAS TOUCHE SVP */
+	padding:20px;
+	width: 400px;
+	height: auto;
+}
+
+/*---- TABLEAU ORIENTATIONS DISPONIBLES------- */
+th { text-align: center;}
+
+.no-border{border : 0px ;}
+
+td,th {
+	padding: 10px ; 
+	border : 2px black groove ; 
+}
+
+table{
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+
+.po{ 
+	font-weight: bolder;
+	font-size: 16px;
+	color:  #00cc00;
+	background-color: #e6ffe6; 
+}
+.im{ 
+	font-size: 16px ;
+	color: red;
+	background-color: #ffe6e6; 
+}
+/*----------------------------------------------*/
+
+/*----------------COMMENTS----------------------*/
+.name{
+	font-style: italic;
+	text-align: right; 
+}
+.comment{
+	font-size: 18px;
+}
+.titre-cent{
+	text-align: center ; 
+	margin-bottom: 30px ; 
+}
+
+#avis{
+	font-style: italic;
+	font-weight: normal;
+	margin-left: 20px;
+}
+
+/*----------button chulo---------------*/
+.button-commentary {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: CornflowerBlue;
+	text-decoration: none;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	width: 300px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  .button-commentary span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button-commentary span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button-commentary:hover span {
+	padding-right: 25px;
+  }
+  
+  .button-commentary:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+/*-----------------------------------*/
+
+/*----------------------------------------------*/
+/*---------------------------------FOOTER--------------------------------*/
+.grid-container-footer-uni{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.grid-container-footer-uni #social-media{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-content: center;
+	justify-content: center;
+}
+
+footer {
+	margin: 15px 200px;
+	padding: 15px 50px; 
+	font-size: 12px;
+}
+#creators{
+	display: grid;
+	align-content: center;
+}
+footer div img {
+	padding: 10px 10px;
+	width: 60px;
+	height: auto;
+  }
