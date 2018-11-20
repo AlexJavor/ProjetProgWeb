@@ -1,0 +1,178 @@
+/*-------------------------------MAIN BODY----------------------------------*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+/*--------------------------MAIN HEADER INSA------------------------------------*/
+.bg-black{
+	background: #333 !important;
+}
+
+#mainNav{
+	display: flex;
+	justify-content: flex-start;
+	padding: 0px 16px;
+    margin: 0px 0px 10px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #eee;
+	transition: background 0.4s;
+}
+#mainNav ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	width: 400px;
+	justify-content: space-around;
+}
+
+#mainNav .logo_INSA img{
+	height: 100px;
+	padding: 20px;
+	transition: height 0.4s;
+}
+
+.menu_button_header {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: red ;
+	font-weight: bold;
+	text-decoration:none; 
+}
+
+.menu_button_header:hover {
+	background-color: lightgrey;
+}
+
+/*---------------------------------CONTAINER BODY-------------------------------*/
+
+#INSA_photo{ /*PAS TOUCHE SVP */
+	padding:20px;
+	width: 400px;
+	height: auto;
+}
+
+#welcome {
+    margin-top: 100px;
+    position: fixed;
+}
+
+#Bienvenue {
+    margin-top: 120px;
+}
+
+#slideshow {
+    position: relative;
+    width : 675px;
+    height: 675px;
+    padding: 15px;
+    margin: 0 auto 2em;
+    border: 1px solid #ddd;
+    background: #FFF;
+    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2)
+}
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+#slideshow .container {
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    overflow: hidden;
+}
+
+#slideshow .container:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: #999;
+}
+
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 100%;
+	height: auto;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+/*----------------------------------------------*/
+/*---------------------------------FOOTER--------------------------------*/
+.grid-container-footer-uni{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.grid-container-footer-uni #social-media{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-content: center;
+	justify-content: center;
+}
+
+footer {
+	margin: 15px 200px;
+	padding: 15px 50px; 
+	font-size: 12px;
+}
+#creators{
+	display: grid;
+	align-content: center;
+}
+footer div img {
+	padding: 10px 10px;
+	width: 60px;
+	height: auto;
+  }
