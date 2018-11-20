@@ -3,17 +3,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> <!--IMPORT framework Bootstrap de l'inernet-->
         <link rel="stylesheet" type="text/css" href="style_contacts.css">  
 		<title>Contacts</title>
 
 	</head>
 	<body>
-		<header>
-			<div id = conteneur_1>
-				<div class = section_1>
-					<a class = "img_logo"> <img src = "images/logo_insa.png" /> </a>
-				</div> 
+		<header id="mainNav">
+            <div class="logo_INSA">
+                <img src="http://2017.igem.org/wiki/images/2/2d/T--INSA-UPS_France--Logo_insatoulouse.png" alt="Logo INSA">
+            </div>
+            <ul>
+                <li><a class="menu_button_header" href="accueil.html"  role="button">ACCUEIL</a></li>
+                <li><a class="menu_button_header" href="contacts.html" role="button">CONTACTS UTILES</a></li>
+            </ul>
+        </header>
+
+        <!-------------STIKY HEADER JAVASCRIPT----------------->
+        <script src="main_univ.js"></script>
+        <!----------------------------------------------------->
+
+        <div id = "headeur">
+			<div id = conteneur_1> 
 				<div class = section_1>
 					<h1> 
 					Contacts de la Direction des Relations Internationales 
@@ -24,12 +37,12 @@
 				</div>
 			</div>
 			<ul id = conteneur>
-				<li>
+				<li class = "menu">
 					<nav class ="no-border"> 
 						<a class="btn btn-primary"  role="button" href=#contactsDRI> Direction des Relations Internationales </a>
 					</nav>
 				</li>
-				<li>
+				<li class = "menu">
 					<nav> 
 						<a class="btn btn-primary"  role="button" href=#contactsMIC > Modélisation Informatique et Communication </a> 
 					</nav>
@@ -38,7 +51,7 @@
 						<li> Génie Mathématiques et Modélisation </li> 
 					</ul>
 				</li>
-				<li>
+				<li class = "menu">
 					<nav> 
 						<a class="btn btn-primary"  role="button" href=#contactsIMACS > Ingénierie des Matériaux, Composants et Systèmes </a> 
 					</nav>
@@ -47,7 +60,7 @@
 						<li> Automatique et Electronique </li> 
 					</ul>
 				</li>
-				<li>
+				<li class = "menu">
 					<nav> 
 						<a class="btn btn-primary"  role="button" href=#contactsIC > Ingénierie de la Construction </a>
 					</nav>
@@ -56,7 +69,7 @@
 						<li> Génie Mécanique </li> 
 					</ul>
 				</li>
-				<li>
+				<li class = "menu">
 					<nav> 
 						<a class="btn btn-primary"  role="button" href=#contactsGC > Ingénierie Chimique Biochimique et Environnement </a> 
 					</nav>
@@ -66,7 +79,7 @@
 					</ul>
 				</li>
 			</ul>				
-		</header> 
+		</div> 
 		<div class = bandeau >
 			<img src="images/flags.jpg">
 		</div>
@@ -155,7 +168,7 @@
 						Voici la liste des personnes à contacter spécifiquement si vous êtes dans la filière IMACS ! 
 					</p>
 				</div>
-				<div class = "Contacts"> 
+				<div class = "contacts"> 
 					<p> 
 						<a href="mailto:guillaume.auriol@insa-toulouse.fr " class=name> Guillaume AURIOL </a>
 						<mark> Correspondant pour les étudiants en deuxième année </mark>
@@ -189,7 +202,7 @@
 						Voici la liste des personnes à contacter spécifiquement si vous êtes dans la filière IMACS ! 
 					</p>
 				</div>
-				<div class = "Contacts"> 
+				<div class = "contacts"> 
 					<p> 
 						<a href="mailto:guillaume.auriol@insa-toulouse.fr " class=name> Guillaume AURIOL </a>
 						<mark> Correspondant pour les étudiants en deuxième année </mark>
@@ -222,7 +235,7 @@
 						Voici la liste des personnes à contacter spécifiquement si vous êtes dans la filière IMACS ! 
 					</p>
 				</div>
-				<div class = "Contacts"> 
+				<div class = "contacts"> 
 					<p> 
 						<a href="mailto:guillaume.auriol@insa-toulouse.fr " class=name> Guillaume AURIOL </a>
 						<mark> Correspondant pour les étudiants en deuxième année </mark>

@@ -76,21 +76,61 @@ h2 {
 }
 
 /*Universités*/
-.INSA {
+
+
+#container-univ {
     display: flex;
+}
+
+.containt-univ{
+	padding: 50px;
+}
+
+#INSA {
     background-image: url("https://www.google.fr/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwiKzsnA7fjdAhVI4YUKHWyBAecQjRx6BAgBEAU&url=https%3A%2F%2Fmobile.facebook.com%2FINSAToulouse%2F%3F_ft_%3Dtop_level_post_id.1525382857522163%253Atl_objid.1525382857522163%253Athid.279342382126223%253A306061129499414%253A2%253A0%253A1506841199%253A3193674026415921439%26__tn__%3D%252AsH-R&psig=AOvVaw1z5ExXaY_YDoewg-TqrDdo&ust=1539157195431149");
+
 }
 
-/*FOOTER*/
-footer {
-	font-size: 12px;
-	padding: 20px 0;
-  }
-footer ul {
-	list-style: none;
+
+/*--------------------------------------------------FOOTER------------------------------------------------------*/
+
+#pied-page {
+	display : flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-footer li img {
-	width: 40px;
-	height: auto;
-  }
+#logo-contenu{
+
+	display: flex;
+	justify-content: flex-end;
+	flex-direction : row ;
+	list-style-type: none;
+}
+
+.un-logo{
+	list-style-type: none ; 
+	margin : 10px;
+	max-width: 54px; 
+}
+
+.un-logo:nth-child(1)
+{
+	align : flex-end;
+}
+
+
+/*---------------------------------STYLE POUR PETIT ECRAN --------------------------------------------------*/ 
+
+@media all and (max-width: 1024px) {
+	#container-univ {
+    	display: flex;
+    	flex-direction: column;
+	}
+
+	#pied-page {
+		display : flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
