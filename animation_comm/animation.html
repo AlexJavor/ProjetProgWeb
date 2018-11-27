@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./animation.js"></script>
+    <script src="./forms.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Prueba avion</title>
+</head>
+<body>
+    <!--Partie canvas-->
+    <header><h1>Ce document est un essai sur les canvas et les formulaires</h1></header>
+    <canvas id="plane" width="1500" height="200" style="background-color: skyblue"></canvas>
+
+    <!--Partie formulaire-->
+    <div class="commentaire" id="boite-com">
+        <h2>Commentaires</h2>
+        <form name="monFormu" class="formulaire" id="form">
+            Username :
+            <input type="text" name="Username"><br>
+
+            Commentaire :<br>
+            <textarea name="commentaire" rows="4" cols="50">Ecrivez ici votre commentaire</textarea>
+            <br>
+            <button type="button" onclick="Poster()">Postez votre commentaire!</button>
+        </form>
+        
+        <h3 class="user">Alex</h3>
+        <p class="com">Super Université! J'ai adoré mon semestre à l'étranger,
+            la ville est magnifique avec un grand nombre de liexu à visiter.
+            Les habitants ont une actitude très accueillante et la fête n'y manque
+            pas. Recommandé!
+        </p>
+    </div>
+
+</body>
+</html>

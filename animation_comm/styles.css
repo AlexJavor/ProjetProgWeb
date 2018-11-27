@@ -1,0 +1,90 @@
+body{
+    font-family: sans-serif;
+    background: white;
+    margin: 0;
+}
+
+header{
+    background: #24272e;
+}
+
+h1{
+    margin-top: 0;
+    background: #24272e;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+h3.user{
+    border: 2px;
+    border-style: solid;
+    border-color: #133f84;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    background: #133f84;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+}
+
+h3.user:hover{
+    border-color: #042556;
+    background-color: #042556;
+}
+
+p.com{
+    text-align: center;
+    color: #133f84;
+    font-style: italic;
+}
+
+form{
+    padding: 0 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #042556;
+    /*background-color: #1f59b8;*/
+    color: #133f84;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+textarea{
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #133f84;
+    resize: none;
+}
+
+#plane{
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+button{
+    border: none;
+    background-color: #133f84;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #042556;
+}
+
+.commentaire{
+    padding: 10px;
+}
