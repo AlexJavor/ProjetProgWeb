@@ -7,7 +7,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="main_univ_LJ.css">                                          <!--IMPORT CSS FILE-->
+        <script src="main_univ.js"></script>
+        <script src="./forms.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="main_univ.css">                                          <!--IMPORT CSS FILE-->
+        <link rel="stylesheet" type="text/css" href="univ_LJ.css">
 
     </head>
 
@@ -19,13 +23,9 @@
             </div>
             <ul>
                 <li><a class="menu_button_header" href="accueil.html"  role="button">ACCUEIL</a></li>
-                <li><a class="menu_button_header" href="contacts.html" role="button">CONTACTS UTILES</a></li>
+                <li><a class="menu_button_header" href="contacts.html" role="button">CONTACTS</a></li>
             </ul>
         </header>
-        
-        <!-------------STIKY HEADER JAVASCRIPT----------------->
-        <script src="main_univ.js"></script>
-        <!----------------------------------------------------->
 
         <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -78,47 +78,47 @@
 					</tr>
 					<tr>
                         <th>Deuxième Année</th>
-                        <td class = "po">Echange Possible</td>
-                        <td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "im">Echange Impossible</td>
-						<td class = "im">Echange Impossible</td>
+                        <td class = "po"></td>
+                        <td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "im"></td>
+						<td class = "im"></td>
 					</tr>
 					<tr>
 						<th>Troisième Année</th>
-						<td class = "po">Echange Possible</td>
-                        <td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "im">Echange Impossible</td>
-						<td class = "im">Echange Impossible</td>
+                        <td class = "po"></td>
+                        <td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "im"></td>
+						<td class = "im"></td>
 					</tr>
 					<tr>
 						<th>Quatrième Année</th>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>		
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "im">Echange Impossible</td>
-                        <td class = "im">Echange Impossible</td>
+                        <td class = "po"></td>
+                        <td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "im"></td>
+						<td class = "im"></td>
 					</tr>
 					<tr>
 						<th>Cinquième Année</th>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-                        <td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-						<td class = "po">Echange Possible</td>
-                        <td class = "po">Echange Possible</td>
-						<td class = "im">Echange Impossible</td>
-						<td class = "im">Echange Impossible</td>
+                        <td class = "po"></td>
+                        <td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "po"></td>
+						<td class = "im"></td>
+						<td class = "im"></td>
 					</tr>
 				</table>
             </div>
@@ -156,59 +156,45 @@
 
             <!-------------------------------------------ROW: COMMENTAIRES------------------------------------------------>
             <div id="Comments">
-
-                <div>
+                <div class="commentaire" id="boite-com">
                     <h2>COMMENTAIRES</h2>
-                    <ul>
-                        <li>
-                            <p class="comment">Une superbe université, un très joli cadre et des professeurs sympathiques</p>
-                            <p class="name">Jean Chaton</p>
-                        </li>
-                        <li>
-                            <p class ="comment">Des problèmes de logements et de langages, par contre, le coût de la vie est faible</p>
-                            <p class = "name">Jean-Louis Aubert</p>
-                        </li>
-                        <li>
-                            <p class="comment">Un campus délabré, la ville est morne, très décevant ... Ce commentaire seul n'avait pas non plus la taille d'un commentaire "classique" que l'on retrouverait parmi les 3 les plus pertinents, mais maintenant si ! </p>
-                            <p class="name">Eminem </p>
-                        </li>
-                    </ul>
-                    <a class="button-commentary" role="button" href="./Commentaires_Pietru.html"><span>Voir plus de Commentaires</span></a>
-                </div>
-
-                <div id="avis"> 
-                    <form method="post" action="traitement.php">
-                        <p>
-                            <textarea name="commentaires" id="commentaires" rows="5" cols="100" required> </textarea> <br>
-                            <label for="commentaires"> Vous avez été dans cette université ? Laisser votre avis pour les futurs étudiants ! </label>
-                            <br><br>
-                            <label for="pseudo"> Pseudo : </label>
-                            <input type="text" name="pseudo" id="pseudo" required />
-                            <input type="submit" value="Envoyer" /> 
-                        </p>
+                    <form name="monFormu" class="formulaire" id="form">
+                        Username :
+                        <input type="text" name="Username"><br>
+            
+                        <br>Commentaire :<br>
+                        <textarea name="commentaire" rows="4" cols="50">Ecrivez ici votre commentaire</textarea>
+                        <br>
+                        <button type="button" onclick="Poster()">Postez votre commentaire!</button>
                     </form>
+                    
+                    <h3 class="user">Alex</h3>
+                    <p class="com">Super Université! J'ai adoré mon semestre à l'étranger,
+                        la ville est magnifique avec un grand nombre de liexu à visiter.
+                        Les habitants ont une actitude très accueillante et la fête n'y manque
+                        pas. Recommandé!
+                    </p>
                 </div>
-
             </div>
             <!------------------------------------------------------------------------------------------------------------>
             
             <!------------------------------------------------ROW: CONTACTER---------------------------------------------->
             <div id="Contact">
                 <h2>CONTACTER</h2>
-                <div class=flex-contact>
-                    <div>
-                        <p>Directrice des Relations Intenationales :<br>
+                <div class=flex-contact-text>
+                    <p>
+                            Pour contacer avec l'université clické <a href="https://www.uni-lj.si/">ICI</a><br><br>
+                            Directrice des Relations Intenationales :<br>
                             Danièle FOURNIER-PRUNARET <br>
                             Tel : +33 5 61 55 95 45 <br>
                             E-Mail : daniele.fournier@insa-toulouse.fr <br><br>
                             Pour avoir plus d'information par rapport aux contacts clické <a href="contacts.html">ICI</a>
-                        </p>
-                    </div>
-                    <div>
-                        <a href="http://www.insa-toulouse.fr/fr/index.html" target="_blank" ><img src="http://2017.igem.org/wiki/images/2/2d/T--INSA-UPS_France--Logo_insatoulouse.png" id="INSA_photo" alt="INSA Logo"></a>
-                    </div>
-
-                </div> 
+                    </p>
+                </div>
+                <div class=flex-contact-images>
+                    <a href="http://www.insa-toulouse.fr/fr/index.html" target="_blank" ><img src="http://2017.igem.org/wiki/images/2/2d/T--INSA-UPS_France--Logo_insatoulouse.png" id="INSA_photo" alt="INSA Logo"></a>
+                    <a href="https://www.uni-lj.si/" target="_blank" ><img src="http://m2dste.ut-capitole.fr/medias/photo/logo-univerza-ljubljani_1455793935854-png" id="Univ_photo" alt="Logo Universitat Politècnica de Catalunya"></a>
+                </div>
             </div>
             <!------------------------------------------------------------------------------------------------------------>
 
