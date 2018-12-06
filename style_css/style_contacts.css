@@ -1,0 +1,272 @@
+
+/*--------------------------MAIN HEADER INSA------------------------------------*/
+.bg-black{
+	background: #333 !important;
+}
+
+#mainNav{
+	display: flex;
+	justify-content: flex-start;
+	padding: 0px 16px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #eee;
+	transition: background 0.4s;
+}
+#mainNav ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	width: 400px;
+	justify-content: space-around;
+}
+
+#mainNav .logo_INSA img{
+	height: 100px;
+	padding: 20px;
+	transition: height 0.4s;
+}
+
+.menu_button_header {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: red ;
+	font-weight: bold;
+	text-decoration:none; 
+}
+
+.menu_button_header:hover {
+	background-color: lightgrey;
+}
+
+#headeur{
+	margin-top: 90px ; 
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; 
+	margin : 20px;
+}
+
+img{
+	max-width: 100% ; 
+}
+
+
+#conteneur_1 {
+	display: flex ;
+	flex-align : center;
+}
+
+.section_1:nth-child(1)
+{
+	padding-top: 20px ; 
+}
+
+.bandeau {
+	padding-top: 20px ; 
+}
+
+nav, nav + ul{
+	border-left : 4px red groove;
+}
+.no-border
+{
+	border : none;
+}
+
+/*.section_1:nth-child(2) {
+	flex : 1 ;
+}*/
+
+h1{
+	text-align: center;
+	font-weight: 400;
+}
+
+.titre{
+	padding : 30px;
+	background-color: #DDD ; 
+}
+
+.Descentree, {
+	text-align: center;
+    font-style: italic; 
+}
+
+.description{
+	font-style: italic;
+}
+
+#conteneur {
+	list-style-type: none ; 
+	display : flex ;
+	/*justify-content: space-around;*/
+}
+
+.inutile
+{
+	list-style-type: none ; 
+}
+
+.btn.btn-primary {
+
+	margin: 20px;
+    border-radius: 5px;
+	border: 0px;
+	color: white;
+	text-shadow: none;
+	background-color: crimson;
+	box-shadow: 6px 6px 6px black
+}
+
+.btn.btn-primary:hover {
+	margin: 20px;
+    border-radius: 5px;
+	border: 0px;
+	color: white;
+	text-shadow: none;
+	background-color: crimson;
+	box-shadow: 6px 6px 6px black inset ; 
+}
+
+.btn.btn-primary:hover {
+
+}
+
+footer {
+
+}
+
+mark {
+	font-style: italic;
+	font-size: 16px;
+}
+
+.name{ 
+	font-weight: bold;
+	font-size: 20px ;
+}
+
+#pied-page {
+	display : flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#logo-contenu{
+
+	display: flex;
+	justify-content: flex-end;
+	flex-direction : row ;
+	list-style-type: none;
+}
+
+.un-logo{
+	list-style-type: none ; 
+	margin : 10px;
+}
+
+.un-logo:nth-child(1)
+{
+	align : flex-end;
+}
+
+#page 
+{
+	display : flex; 
+	flex-direction: row;
+	flex: auto ;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.page-elem
+{
+	max-width : 50% ;
+	/*border : 2px black double;*/
+	padding-left : 20px;
+	padding-top: 30px ; 
+}
+.page-elem:nth-child(5)
+{
+	align-items : left ; 
+}
+
+.contacts{
+	margin-top: 20px; 
+}
+
+@media all and (max-width: 1024px)
+{
+	#conteneur
+	{
+		justify-content: center;
+		display : flex;
+		flex-direction: column;
+	}
+
+	#page
+	{ 
+		text-align : center;
+		display : flex;
+		flex-direction : column;
+	}
+
+	#pied-page
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	#logo-contenu 
+	{
+		display: flex;
+		justify-content: right;
+	}
+	.bandeau
+	{
+		display: none ; 
+	}
+	h1
+	{
+		text-align: center;
+	}
+	.page-elem
+	{
+		max-width: 100%;
+		padding-left : 20px;
+		padding-top: 30px ; 
+	}
+	.no-border
+	{
+		border-left: 4px red groove;
+	}
+	.btn.btn-primary {
+
+	margin: 20px;
+    border-radius: 5px;
+	border: 0px;
+	color: white;
+	text-shadow: none;
+	background-color: crimson;
+	box-shadow: 4px 4px 6px black
+}
+
+.btn.btn-primary:hover {
+	margin: 20px;
+    border-radius: 5px;
+	border: 0px;
+	color: white;
+	text-shadow: none;
+	background-color: crimson;
+	box-shadow: 4px 4px 6px black inset ; 
+}
+
+

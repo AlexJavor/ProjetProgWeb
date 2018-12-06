@@ -1,0 +1,55 @@
+/*-------------------------------MAIN BODY----------------------------------*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+/*--------------------------MAIN HEADER INSA------------------------------------*/
+.bg-black{
+	background: #333 !important;
+}
+
+#mainNav{
+	display: flex;
+	justify-content: flex-start;
+	padding: 0px 16px;
+    margin: 0px 0px 10px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #eee;
+	transition: background 0.4s;
+    z-index: 12;
+}
+#mainNav ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	width: 400px;
+	justify-content: space-around;
+}
+
+#mainNav .logo_INSA img{
+	height: 100px;
+	padding: 20px;
+	transition: height 0.4s;
+}
+
+.menu_button_header {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: red ;
+	font-weight: bold;
+	text-decoration:none; 
+}
+
+.menu_button_header:hover {
+	background-color: lightgrey;
+}
