@@ -1,5 +1,10 @@
 
 /*--------------------------MAIN HEADER INSA------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
 .bg-black{
 	background: #333 !important;
 }
@@ -44,13 +49,13 @@
 }
 
 #headeur{
+	margin: 20px;
 	margin-top: 90px ; 
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300; 
-	margin : 20px;
 }
 
 img{
@@ -60,7 +65,7 @@ img{
 
 #conteneur_1 {
 	display: flex ;
-	flex-align : center;
+	flex-align: center;
 }
 
 .section_1:nth-child(1)
@@ -74,6 +79,8 @@ img{
 
 nav, nav + ul{
 	border-left : 4px red groove;
+	list-style-type: none;
+	/*padding-left : 20px;*/
 }
 .no-border
 {
@@ -135,14 +142,6 @@ h1{
 	box-shadow: 6px 6px 6px black inset ; 
 }
 
-.btn.btn-primary:hover {
-
-}
-
-footer {
-
-}
-
 mark {
 	font-style: italic;
 	font-size: 16px;
@@ -200,6 +199,10 @@ mark {
 
 .contacts{
 	margin-top: 20px; 
+}
+
+mark {
+	background-color: white;
 }
 
 @media all and (max-width: 1024px)
