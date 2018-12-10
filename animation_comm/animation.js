@@ -7,10 +7,10 @@ var Ypos = 100;
 var direction = true;
 
 function Init(){
-    plane.src = "./plane.png";
-    reverse_plane.src = "./reverse_plane.png";
-    cloud.src = "./cloud.png";
-    cloud2.src = "./cloud2.png";
+    plane.src = "../images/plane.png";
+    reverse_plane.src = "../images/reverse_plane.png";
+    cloud.src = "../images/cloud.png";
+    cloud2.src = "../images/cloud2.png";
     window.requestAnimationFrame(Draw);
 }
 
