@@ -1,4 +1,18 @@
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*									MAIN_UNIV									 */
+/*///////////////////////////////////////////////////////////////////////////////*/
+
 /*-------------------------------MAIN BODY----------------------------------*/
+@media only screen and (max-width: 768px){
+	[class*="flex-container-body-uni"] {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		/*margin: 20px 5%;
+		padding: 10px 2%;*/ 
+	}
+}
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -19,6 +33,7 @@ body {
 	padding: 0px 16px;
 	position: fixed;
 	width: 100%;
+	height: auto;
 	top: 0px;
 	background: #eee;
 	transition: background 0.4s;
@@ -32,11 +47,12 @@ body {
 	justify-content: space-around;
 }
 
-#mainNav .logo_INSA img{
+.logo_INSA img{
 	height: 100px;
 	padding: 20px;
 	transition: height 0.4s;
 }
+
 
 .menu_button_header {
 	border-radius: 5px;
@@ -54,26 +70,14 @@ body {
 }
 
 /*-------------------------------HEADER UNI-------------------------------------*/
-
-.flex-container-header-uni{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin: 120px 8% 20px 8%;
-	padding: 15px 1%;
-	z-index: 20;
-}
-
-.flex-container-header-uni > div,.header > div {
+.header > div {
 	width: auto;
 	padding: 10px;
   }
 
 /*.menu_button {}*/
 
-.menu_button:hover {
+.menu_button_UPC:hover,.menu_button_LJ:hover, .menu_button_BARI:hover{
 	background-color: lightgray;
   }
 
@@ -84,16 +88,17 @@ body {
 
 #Pres_Univ h2{
 	color:red;
-	padding: 2% 3% 0% 0%;
+	padding: 2% 10% 0% 0%;
 	font-family: 'Roboto', sans-serif;
 	text-align: right;
 }
 #Pres_Univ p{
 	color: white;
+	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	text-align: justify;
     text-justify: inter-word;
-	padding: 0% 3% 0% 10%;
+	padding: 0% 10% 0% 10%;
 	margin: 0 0 3% 7%;
 }
 
@@ -103,8 +108,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	margin: 20px 5%;
-	padding: 10px 2%; 
+	margin: 20px 10%;
+	padding: 10px 5%; 
 
 }
 
@@ -114,9 +119,11 @@ body {
 	border-bottom: 3px solid #cccccc;
 }
 
-#Pres_Univ,#Orientations, #Cursus, #Carte, #Comments, #Contact{
-	padding: 100px 10px 10px 10px;
-	margin: -90px 30px 20px 30px;
+#Orientations, #Cursus, #Carte, #Comments, #Contact{
+	/*padding: 100px 10px 10px 10px;
+	margin: -90px 30px 20px 30px;*/
+	padding: 10% 2% 2% 2%;
+	margin: -9% 3% 2% 3%;
 }
 #Orientations{z-index:18;}
 #Cursus{z-index:17;}
@@ -157,13 +164,17 @@ body {
 
 #INSA_photo{
 	padding:20px;
-	width: 400px;
+	max-width: 400px;
 	height: auto;
 }
 
 
 /*---- TABLEAU ORIENTATIONS DISPONIBLES------- */
 .no-border{border : 0px ;}
+
+.ent-haut{
+	padding: 20px;
+}
 
 td,th {
 	padding: 10px ; 
@@ -194,12 +205,24 @@ table{
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-/*----------------------------------------------*/
+/*--------------/*	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 10%;
+	padding: 10px 5%; ---------------*/
 
-/*-----------------------------------COMMENTS---------------------------------------*/
+/*--------------/*	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 10%;
+	padding: 10px 5%; ----COMMENTS---------------------------------------*/
 
 h3.user{
-    border: 2px;
+    border: 2px;/*	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 10%;
+	padding: 10px 5%; 
     border-style: solid;
     border-color: #133f84;
     border-radius: 4px;
@@ -283,7 +306,7 @@ button:hover{
 
 footer {
 	margin: 20px 10%;
-	padding: 10px 2%;
+	padding: 10px 8%;
 	font-size: 12px;
 }
 #creators{
@@ -295,3 +318,155 @@ footer div img {
 	width: 60px;
 	height: auto;
   }
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*									END_MAIN_UNIV								 */
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*///////////////////////////////////UNIV_UPC////////////////////////////////////*/
+.flex-container-header-UPC{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 120px 8% 20px 8%;
+	padding: 15px 1%;
+	z-index: 20;
+}
+
+.flex-container-header-UPC > div{
+	width: auto;
+	padding: 10px;
+}
+
+.flex-contaier-presentation-UPC {
+	display: flex;
+	background-image: url("https://enginyeriafisica.etsetb.upc.edu/ca/vols-estudiar-enginyeria-fisica/CampusNordPano105cs.jpg");
+	background-size: cover;
+	color: #ffffff;
+	height: 600px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+	padding: 10px 0;
+	z-index:19;
+}
+
+.menu_button_UPC {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	transition: 0.5s;
+	color: CornflowerBlue ;
+	background-color: white;
+	text-decoration:none; 
+}
+
+#UPC_photo{
+	padding:20px;
+	width: 400px;
+	height: auto;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////UNIV_LJ/////////////////////////////////////*/
+.flex-container-header-LJ{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 120px 8% 20px 8%;
+	padding: 15px 1%;
+	font-weight: bold;
+	z-index: 20;
+}
+.flex-container-header-LJ img{
+	width: 170px;
+	height: auto;
+}
+
+.flex-container-header-LJ > div{
+	width: auto;
+	padding: 10px;
+}
+
+.flex-contaier-presentation-LJ {
+	display: flex;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Univerza_v_Ljubljani_01.jpg");
+	background-size: cover;
+	color: #ffffff;
+	height: 900px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+	padding: 10px 0;
+	background-position: 80% 25%;
+}
+
+.menu_button_LJ {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: red;
+	background-color: white;
+	text-decoration:none; 
+}
+
+#LJ_photo{
+	padding:20px;
+	width: 300px;
+	height: auto;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////UNIV_BARI///////////////////////////////////*/
+.flex-container-header-BARI{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 120px 8% 20px 8%;
+	padding: 15px 1%;
+	z-index: 20;
+}
+
+.flex-container-header-BARI > div{
+	width: auto;
+	padding: 10px;
+}
+
+.flex-contaier-presentation-BARI {
+	display: flex;
+	background-image: url("https://www.lagazzettadelmezzogiorno.it/resizer/-1/-1/true/1516985621101.jpg--.jpg?1516985621000");
+	background-size: cover;
+	color: #ffffff;
+	height: 750px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+	padding: 10px 0;
+	background-position: 20% 25%;
+}
+
+.menu_button_BARI {
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+	transition: 0.5s;
+	color: LightSeaGreen ;
+	background-color: white;
+	text-decoration:none; 
+}
+
+#BARI_photo{
+	padding:20px;
+	max-width: 100%;
+	height: auto;
+}
+/*///////////////////////////////////////////////////////////////////////////////*/
