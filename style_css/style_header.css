@@ -23,7 +23,7 @@ body {
 	top: 0px;
 	background: #eee;
 	transition: background 0.4s;
-    z-index: 12;
+    z-index: 500;
 }
 #mainNav ul{
 	list-style: none;
@@ -57,11 +57,11 @@ body {
 	transition: 0.5s;
 	color: orange ;
 	font-weight: bold;
-	text-decoration:underline; 
+	text-decoration:none;
 }
 
 #liste_univ{
-	border:2px black double;
+	border:2px black double; 
 }
 
 .Liste_univs {

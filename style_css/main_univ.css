@@ -22,52 +22,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
-/*--------------------------MAIN HEADER INSA------------------------------------*/
-.bg-black{
-	background: #333 !important;
-}
-
-#mainNav{
-	display: flex;
-	justify-content: flex-start;
-	padding: 0px 16px;
-	position: fixed;
-	width: 100%;
-	height: auto;
-	top: 0px;
-	background: #eee;
-	transition: background 0.4s;
-	z-index: 500;
-}
-#mainNav ul{
-	list-style: none;
-	display: flex;
-	align-items: center;
-	width: 400px;
-	justify-content: space-around;
-}
-
-.logo_INSA img{
-	height: 100px;
-	padding: 20px;
-	transition: height 0.4s;
-}
-
-
-.menu_button_header {
-	border-radius: 5px;
-	padding: 10px 10px;
-	border: none;
-	text-align: center;
-	transition: 0.5s;
-	color: red ;
-	font-weight: bold;
-	text-decoration:none; 
-}
-
-.menu_button_header:hover {
-	background-color: lightgrey;
-}
 
 /*-------------------------------HEADER UNI-------------------------------------*/
 .header > div {
@@ -205,24 +159,11 @@ table{
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-/*--------------/*	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin: 20px 10%;
-	padding: 10px 5%; ---------------*/
 
-/*--------------/*	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin: 20px 10%;
-	padding: 10px 5%; ----COMMENTS---------------------------------------*/
+/*--------------------------COMMENTS---------------------------------------*/
 
 h3.user{
-    border: 2px;/*	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	margin: 20px 10%;
-	padding: 10px 5%; 
+	border: 2px;
     border-style: solid;
     border-color: #133f84;
     border-radius: 4px;
