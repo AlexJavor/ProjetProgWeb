@@ -39,7 +39,7 @@ body {
 	transition: height 0.4s;
 }
 
-.menu_button_header {
+.menu_button_header{
 	border-radius: 5px;
 	padding: 10px 10px;
 	border: none;
@@ -48,6 +48,26 @@ body {
 	color: red ;
 	font-weight: bold;
 	text-decoration:none; 
+}
+.menu_button_menu{
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: none;
+	text-align: center;
+	transition: 0.5s;
+	color: orange ;
+	font-weight: bold;
+	text-decoration:underline; 
+}
+
+#liste_univ{
+	border:2px black double;
+}
+
+.Liste_univs {
+	position: relative;
+	display: flex;
+	background: #eee;
 }
 
 .menu_button_header:hover {
