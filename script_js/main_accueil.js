@@ -5,12 +5,13 @@ function showDivs(n) {
     for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    console.log(x);
     x[slideIndex-1].style.display = "block";
 }
 
+var slideIndex;
+
 window.onload = function(){
-    var slideIndex = 1;
+    slideIndex = 1;
     showDivs(slideIndex);
 }
 
