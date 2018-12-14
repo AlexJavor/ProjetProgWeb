@@ -1,0 +1,5 @@
+A faire : Remplacer les checks Verts et les croix par des figures
+changer couleurs mails contact
+Versions portables : Un slider pour les cours de Petru
+Versions portables 100 % op : L'accueil 23 de Denis. 
+Enlever Logo insa quand on est en mode portable 
