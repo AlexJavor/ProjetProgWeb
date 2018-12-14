@@ -55,6 +55,27 @@ body {
 }
 
 /*---------------------------------CONTAINER BODY-------------------------------*/
+#Contact{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 10%;
+	padding: 10px 5%; 
+}
+
+.flex-contact-text{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.flex-contact-images{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
 
 #INSA_photo{ /*PAS TOUCHE SVP */
 	padding:20px;
@@ -68,7 +89,12 @@ body {
 }
 
 #Bienvenue {
-    margin-top: 120px;
+	margin-top: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 10%;
+	padding: 10px 5%; 
 }
 
 .liste-fac {
@@ -164,6 +190,17 @@ body {
     float: right;
 }
 
+#Universites{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 20px 10%;
+	padding: 10px 5%; 
+}
+#Universites ul{
+	list-style-type: none;
+}
+
 
 
 /*----------------------------------------------*/
@@ -196,3 +233,29 @@ footer div img {
 	width: 60px;
 	height: auto;
   }
+
+
+
+#Petru_photo{
+	padding:20px;
+	width: 250px;
+	height: auto;
+}
+
+#BARI_photo{
+	padding:20px;
+	max-width: 100%;
+	height: auto;
+}
+
+#LJ_photo{
+	padding:20px;
+	width: 200px;
+	height: auto;
+}
+
+#UPC_photo{
+	padding:20px;
+	width: 400px;
+	height: auto;
+}

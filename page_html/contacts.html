@@ -4,9 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> <!--IMPORT framework Bootstrap de l'inernet-->
-        <link rel="stylesheet" type="text/css" href="../style_css/style_contacts.css">  
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../style_css/style_contacts.css">
+		<link rel="stylesheet" type="text/css" href="../style_css/style_header.css">   
 		<title>Contacts</title>
 
 	</head>
@@ -16,10 +17,37 @@
                 <img src="http://2017.igem.org/wiki/images/2/2d/T--INSA-UPS_France--Logo_insatoulouse.png" alt="Logo INSA">
             </div>
             <ul>
-                <li><a class="menu_button_header" href="accueil.html"  role="button">ACCUEIL</a></li>
-                <li><a class="menu_button_header" href="contacts.html" role="button">CONTACTS UTILES</a></li>
+                <li> <a class="menu_button_header" href="accueil.html"  role="button">ACCUEIL</a></li>
+                <li> <a class="menu_button_header" href="contacts.html" role="button">CONTACTS</a></li>
+                <li id="menu_univ"> <a class="menu_button_header" style="color: red;"> UNIVERSITES </a>
+                <ul id="liste_univ" style="display : none ; position:absolute;">
+                    <li class="Liste_univs"> <a class = "menu_button_menu" href="index_petru_maior.html"> Université Petru Maior</a></li>
+                    <li class="Liste_univs"> <a class = "menu_button_menu" href="index_univ_Bari.html"> Université Bari </a></li>
+                    <li class="Liste_univs"> <a class = "menu_button_menu" href="index_univ_LJ.html"> Université de Ljubljani</a></li>
+                    <li class="Liste_univs"> <a class = "menu_button_menu" href="index_univ_UPC.html"> Université Polytechnique de Catalogne </a></li>
+                </ul> 
             </ul>
         </header>
+
+        <script> 
+            /*document.getElementsByClassName("Liste_univs").onMouseOver = function() {sous_menu_ouvre()} ; 
+            document.getElementsByClassName("Liste_univs").onMouseOut = function() {sous_menu_ferme()} ; */
+                document.getElementById("menu_univ").addEventListener("mouseover", mouseOver);
+            /*document.getElementsByClassName("Liste_univs")[1].addEventListener("mouseover", mouseOver);*/
+                document.getElementById("menu_univ").addEventListener("mouseout", mouseOut);
+            //document.getElementsByClassName("Liste_univs")[1].addEventListener("mouseout", mouseOut); 
+        
+                function mouseOver() {
+                    el = document.getElementById("liste_univ");
+                //console.log(el);
+                document.getElementById("liste_univ").style.display = "block";
+                } 
+
+                function mouseOut() { 
+                document.getElementById("liste_univ").style.display = "none";
+        
+                }
+        </script> 
 
         <!-------------STIKY HEADER JAVASCRIPT----------------->
         <script src="../script_js/main_univ.js"></script>
